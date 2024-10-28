@@ -13,7 +13,7 @@ git clone https://github.com/CTaPuH4/lab3_api.git
 ```
 
 ```
-cd api_yamdb/
+cd lab3_api/
 ```
 
 Cоздать и активировать виртуальное окружение:
