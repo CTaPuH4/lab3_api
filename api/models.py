@@ -28,6 +28,11 @@ class Item(models.Model):
         related_name='items',
         verbose_name='Категория',
     )
+    image = models.ImageField(
+        upload_to='static/images/',
+        null=True,
+        default=None
+    )
     is_published = models.BooleanField('Опубликовано')
 
     class Meta:
