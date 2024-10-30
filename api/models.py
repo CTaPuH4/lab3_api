@@ -3,10 +3,6 @@ from django.db import models
 
 class Category(models.Model):
     name = models.CharField('Название', max_length=35)
-    slug = models.SlugField(
-        'Слаг',
-        unique=True,
-    )
 
     class Meta:
         ordering = ('name',)

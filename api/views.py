@@ -9,7 +9,6 @@ class CategoryViewSet(mixins.ListModelMixin, viewsets.GenericViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
     filter_backends = (filters.SearchFilter,)
-    lookup_field = 'slug'
     search_fields = ('name',)
 
 

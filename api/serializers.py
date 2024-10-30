@@ -18,7 +18,7 @@ class Base64ImageField(serializers.ImageField):
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Category
-        fields = ('name', 'slug')
+        fields = '__all__'
 
 
 class ItemSerializer(serializers.ModelSerializer):

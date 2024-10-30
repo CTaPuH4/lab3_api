@@ -8,13 +8,11 @@ class CategoryAdmin(admin.ModelAdmin):
     list_display = (
         'id',
         'name',
-        'slug',
     )
     list_editable = (
         'name',
-        'slug',
     )
-    search_fields = ('slug',)
+    search_fields = ('name',)
 
 
 @admin.register(Item)
